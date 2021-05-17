@@ -1,6 +1,6 @@
 # Episodic Transformers (E.T.)
 
-**Episodic Transformer for Vision-and-Language Navigation**  
+[<b>Episodic Transformer for Vision-and-Language Navigation</b>](https://arxiv.org/abs/2105.06453)  
 Alexander Pashevich, Cordelia Schmid, Chen Sun
 
 **Episodic Transformer (E.T.)** is a novel attention-based architecture for vision-and-language navigation. E.T. is based on a multimodal transformer that encodes language inputs and the full episode history of visual observations and actions.
@@ -49,8 +49,8 @@ Render PNG images and create an LMDB dataset with natural language annotations:
 $ python -m alfred.gen.render_trajs
 $ python -m alfred.data.create_lmdb with args.visual_checkpoint=$ET_LOGS/pretrained/fasterrcnn_model.pth args.data_output=lmdb_human args.vocab_path=$ET_ROOT/files/human.vocab
 ```
-Note #1: For rendering, you may need to configure `args.x_display` to correspond to an X server number running on your machine.
-Note #2: We do not use JPG images from the `full` dataset as they would differ from the images rendered during evaluation due to the JPG compression.
+Note #1: For rendering, you may need to configure `args.x_display` to correspond to an X server number running on your machine.  
+Note #2: We do not use JPG images from the `full` dataset as they would differ from the images rendered during evaluation due to the JPG compression.  
 
 ## Pretrained models evaluation
 
@@ -109,10 +109,11 @@ Please refer to the [original ALFRED code](https://github.com/askforalfred/alfre
 
 If you find this repository useful, please cite our work:
 ```
-@article{et2021,
+@misc{pashevich2021episodic,
   title ={{Episodic Transformer for Vision-and-Language Navigation}},
   author={Alexander Pashevich and Cordelia Schmid and Chen Sun},
-  journal={arXiv preprint},
-  year={2021}
+  year={2021},
+  eprint={2105.06453},
+  archivePrefix={arXiv},
 }
 ```
