@@ -1,7 +1,7 @@
 # Episodic Transformers (E.T.)
 
 [<b>Episodic Transformer for Vision-and-Language Navigation</b>](https://arxiv.org/abs/2105.06453)  
-Alexander Pashevich, Cordelia Schmid, Chen Sun
+[Alexander Pashevich](https://thoth.inrialpes.fr/people/apashevi/), [Cordelia Schmid](https://www.di.ens.fr/willow/people_webpages/cordelia/), [Chen Sun](https://chensun.me/)
 
 **Episodic Transformer (E.T.)** is a novel attention-based architecture for vision-and-language navigation. E.T. is based on a multimodal transformer that encodes language inputs and the full episode history of visual observations and actions.
 This code reproduces the results obtained with E.T. on [ALFRED benchmark](https://arxiv.org/abs/1912.01734). To learn more about the benchmark and the original code, please refer to [ALFRED repository](https://github.com/askforalfred/alfred).
