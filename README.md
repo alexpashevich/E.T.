@@ -109,11 +109,10 @@ Please refer to the [original ALFRED code](https://github.com/askforalfred/alfre
 
 If you find this repository useful, please cite our work:
 ```
-@misc{pashevich2021episodic,
-  title ={{Episodic Transformer for Vision-and-Language Navigation}},
-  author={Alexander Pashevich and Cordelia Schmid and Chen Sun},
-  year={2021},
-  eprint={2105.06453},
-  archivePrefix={arXiv},
+@inproceedings{pashevich2021episodic,
+  title     = {{Episodic Transformer for Vision-and-Language Navigation}},
+  author    = {Alexander Pashevich and Cordelia Schmid and Chen Sun},
+  booktitle = {ICCV},
+  year      = {2021},
 }
 ```
