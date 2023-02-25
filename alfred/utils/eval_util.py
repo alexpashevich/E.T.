@@ -323,11 +323,7 @@ def load_language(
     load language features from the dataset and unit-test the feature extractor
     '''
     # load language features
-    if subgoal_idx is not None:
-        feat_args = (task, subgoal_idx, subgoal_idx + 1)
-    else:
-        feat_args = (task,)
-    feat_numpy = dataset.load_features(*feat_args)
+    feat_numpy = dataset.load_features(task)
     # test extractor with the frames
     if not test_split:
         frames_expert = dataset.load_frames(dataset_key)
