@@ -43,6 +43,8 @@ $ wget http://pascal.inrialpes.fr/data2/apashevi/et_checkpoints.zip
 $ unzip et_checkpoints.zip
 $ mv pretrained $ET_LOGS/
 ```
+UPD:
+If the wget command does not work, please downlodad the checkpoints from a [google drive](https://drive.google.com/file/d/1RyXDsVKdx4P0i6OQQH2vYTkq-1tQI71z/view?usp=sharing).
 
 Render PNG images and create an LMDB dataset with natural language annotations:
 ```bash
@@ -104,6 +106,9 @@ Please refer to the [original ALFRED code](https://github.com/askforalfred/alfre
 1. Generate 45K trajectories with `alfred.gen.generate_trajs`.
 2. Create a synthetic LMDB dataset called `lmdb_synth_45K` using `args.visual_checkpoint=$ET_LOGS/pretrained/fasterrcnn_model.pth` and `args.vocab_path=$ET_ROOT/files/synth.vocab`.
 3. Train an E.T. agent using `exp.data.train=lmdb_human,lmdb_synth_45K`.
+
+UPD:
+You can also access the 45K trajectories used in the paper [here](https://drive.google.com/file/d/1RqYtm8ZU2xbef3OPJ5LKESjatodRVDPE/view?usp=sharing).
 
 ## Citation
 
