@@ -39,7 +39,7 @@ def cfg_args():
     # frame size to render
     render_size = 300
     # X server number
-    x_display = '0'
+    x_display = '1.0'
     # render and save RGB images
     render_frames = True
     # render and save depth images

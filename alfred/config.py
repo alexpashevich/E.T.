@@ -63,7 +63,7 @@ def cfg_eval():
     # run in the debug mode
     debug = False
     # X server number
-    x_display = '0'
+    x_display = '1.0'
     # range of checkpoints to evaluate, (9, 20, 2) means epochs 9, 11, 13, 15, 17, 19
     # if None, only 'latest.pth' will be evaluated
     eval_range = (9, 20, 1)
